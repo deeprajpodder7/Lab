@@ -17,7 +17,7 @@ create table Movie( Mv_no int primary key,
 					Cust_id Varchar(5),
 					Title Varchar(15) not null,
                     Star char(2) not null,
-                    Price bigint(3));
+                    Price bigint(3),check(Price>=100 and price<=250));
 
 insert into Movie values (1, 'A02', 'Bloody', 'JC', 181); 
 insert into Movie values (2, 'A04', 'The Firm', 'TC', 200); 
